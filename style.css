@@ -54,26 +54,6 @@ body, html {
     transform: translateY(-100%);
 }
 
-.music-control {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.music-control button {
-    color: #fff;
-    background: #000;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
 /* Schermate di vittoria e sconfitta */
 .overlay {
     position: absolute;

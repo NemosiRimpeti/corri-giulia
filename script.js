@@ -149,12 +149,6 @@ function startBackgroundMusic() {
     }
 }
 
-// Funzione per avviare manualmente la musica di sottofondo
-function manualStartBackgroundMusic() {
-    startBackgroundMusic();
-    document.getElementById("musicControl").style.display = "none"; // Nasconde l'icona dopo aver avviato la musica
-}
-
 // Funzione per nascondere la schermata iniziale con una transizione verso l'alto
 function hideStartScreen() {
     startScreen.classList.add("hidden");
