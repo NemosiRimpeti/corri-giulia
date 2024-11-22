@@ -1,0 +1,114 @@
+/* Stile di base */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+/* Canvas di gioco */
+#gameCanvas {
+    background-color: #fff;
+    border: 2px solid #000;
+    z-index: 1;
+}
+
+/* Schermata iniziale */
+.start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centro esatto */
+    width: 800px; /* Larghezza uguale a quella del canvas */
+    height: 400px; /* Altezza uguale a quella del canvas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Background semi-trasparente */
+    z-index: 2; /* Assicurati che sia sopra al canvas */
+    transition: transform 1s ease-in-out;
+}
+
+.start-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.start-gif {
+    position: absolute;
+    width: 140px;
+    height: 300px;
+    top: 67%; /* Posiziona verticalmente al centro */
+    left: 51%; /* Posiziona orizzontalmente al centro */
+    transform: translate(-50%, -50%); /* Centra esattamente */
+    z-index: 5; /* Sopra l'immagine di sfondo della schermata */
+}
+
+.start-screen.hidden {
+    transform: translateY(-100%);
+}
+
+.music-control {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.music-control button {
+    color: #fff;
+    background: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Schermate di vittoria e sconfitta */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    z-index: 3;
+}
+
+.start-button button {
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+video.hidden, img.hidden {
+    display: none;
+}
+
+video, img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+    z-index: 4;
+}
+
+.hidden {
+    display: none;
+}

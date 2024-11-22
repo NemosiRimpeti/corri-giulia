@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco del Dinosauro Personalizzato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Schermata iniziale -->
+    <div id="startScreen" class="start-screen">
+        <img src="images/schermatainiziale.jpg" alt="Schermata Iniziale" class="start-screen-image">
+        <img src="images/correre.gif" alt="GIF Animata" class="start-gif">
+    </div>
+    
+    <!-- Icona per avviare la musica -->
+<div id="musicControl" class="music-control">
+    <button onclick="startBackgroundMusic()">🎵 Avvia Musica</button>
+</div>
+
+    <!-- Canvas per il gioco -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Schermata di Sconfitta -->
+    <div id="gameOverScreen" class="overlay hidden">
+        <h2 id="gameOverMessage"></h2>
+        <p>Tocca per riprovare</p>
+    </div>
+
+    <!-- Schermata di Vittoria -->
+    <div id="victoryScreen" class="overlay hidden">
+        <h2>Ti sei ubriacata, hai vinto!</h2>
+        <p>Adesso puoi incontrare i tuoi più grandi idoli!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
